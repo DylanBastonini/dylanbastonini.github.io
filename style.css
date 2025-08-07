@@ -1,7 +1,8 @@
+/* Modern hacker-inspired theme with Bootstrap integration and binary animation support */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
     font-family: 'JetBrains Mono', 'Fira Mono', 'Cascadia Mono', 'Menlo', 'Consolas', 'Liberation Mono', monospace;
 }
 
@@ -9,171 +10,208 @@ body {
     background-color: #0f0f0f;
     color: #f0f0f0;
     line-height: 1.7;
-    padding: 24px;
     min-height: 100vh;
     letter-spacing: 0.01em;
+    padding: 0;
 }
 
 header {
     text-align: center;
     margin-bottom: 28px;
     letter-spacing: 0.04em;
+    position: relative;
+    overflow: hidden;
+    padding-top: 60px;
+    padding-bottom: 40px;
 }
 
 header h1 {
-    font-size: 3em;
+    font-size: 2.2em;
     color: #00FF00;
     font-weight: 900;
     text-shadow: 0 0 8px #00ff0080, 0 0 2px #00ff00;
     letter-spacing: 0.08em;
+    z-index: 2;
+    position: relative;
 }
 
 header p {
     font-style: normal;
     color: #b0ffb0;
-    font-size: 1.2em;
+    font-size: 1.1em;
     margin-top: 8px;
     letter-spacing: 0.03em;
+    z-index: 2;
+    position: relative;
+}
+
+#binary-animation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+    opacity: 0.18;
 }
 
 nav {
-    text-align: center;
     margin-bottom: 36px;
-    padding: 14px 0;
+    background: linear-gradient(90deg, #1a1a1a 60%, #222 100%);
     border-radius: 8px;
-    border: 2px solid #00FF00;
-    background: none;
-    box-shadow: none;
+    box-shadow: 0 2px 12px #00ff0020;
+    padding: 0;
 }
 
-nav a {
-    color: #00FF00;
-    margin: 0 18px;
-    text-decoration: none;
+.navbar {
+    padding: 0 !important;
+}
+
+.navbar-nav .nav-link {
+    color: #00FF00 !important;
     font-weight: 700;
-    font-size: 1.15em;
-    padding: 6px 10px;
-    border-radius: 4px;
-    transition: background 0.15s, color 0.15s;
+    font-size: 1.08em;
     letter-spacing: 0.02em;
+    transition: background 0.15s, color 0.15s;
+    border-radius: 4px;
+    margin: 0 2px;
+    padding: 8px 14px !important;
 }
 
-nav a:hover, nav a:focus {
-    color: #0f0f0f;
-    background: #00FF00;
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus,
+.navbar-nav .nav-link.active {
+    color: #0f0f0f !important;
+    background: #00FF00 !important;
     text-shadow: 0 0 4px #00ff00;
     outline: none;
+}
+
+.navbar-toggler {
+    border: none;
+    background: none;
+    color: #00FF00 !important;
+    font-size: 1.7em;
+    margin-right: 10px;
 }
 
 main {
     max-width: 900px;
     margin: 0 auto;
+    background: #181818;
     border-radius: 10px;
-    border: 2px solid #00FF00;
-    background: none;
-    box-shadow: none;
-    padding: 32px 28px;
+    box-shadow: 0 0 24px #00ff0020;
+    padding: 32px 10px;
 }
 
+@media (max-width: 991.98px) {
+    color: #ff00ff;
+    main {
+        text-decoration: underline;
+        padding: 18px 2vw;
+    }
+    header {
+        padding-top: 40px;
+        padding-bottom: 24px;
+        display: inline-block;
+    }
+    margin-top: 14px;
+    header h1 {
+        padding: 12px 20px;
+        font-size: 1.5em;
+        f00;
+    }
+}
+ne;
+;
 section {
     margin-bottom: 44px;
-    border: none;
-    background: none;
-}
-
+}8px #00ff0030;
+und 0.15s, color 0.15s;
 h2 {
+    .03em;
     color: #00FF00;
     margin-bottom: 12px;
-    border-bottom: 2px solid #00FF00;
-    padding-bottom: 7px;
-    font-size: 1.5em;
+    border-bottom: 2px solid #222;
+    padding-bottom: 7px;00;
+    font-size: 1.3em;
+    color: #fff;
     letter-spacing: 0.04em;
+    outline: none;
     text-shadow: 0 0 4px #00ff0040;
 }
 
 ul {
+    nter;
     list-style-type: square;
+    margin-top: 60px;
     margin-left: 28px;
+    font-size: 1em;
     color: #b0ffb0;
+    r: #77ff77;
     font-size: 1.08em;
+    2em;
     margin-bottom: 10px;
-}
-
+    olid #222;
+}px;
+ear-gradient(90deg, #181818 60%, #222 100%);
 a {
+    10px;
     color: #00ccff;
+    020;
     text-decoration: none;
     transition: color 0.15s;
 }
-
 a:hover, a:focus {
     color: #ff00ff;
     text-decoration: underline;
     outline: none;
 }
-
 .btn {
     display: inline-block;
     margin-top: 14px;
     padding: 12px 20px;
-    background: none;
-    color: #00FF00;
+    background-color: #00ff00;
+    color: #0f0f0f;
     text-decoration: none;
     font-weight: bold;
     border-radius: 6px;
     font-size: 1.1em;
-    border: 2px solid #00FF00;
-    box-shadow: none;
-    transition: background 0.15s, color 0.15s;
+    box-shadow: 0 2px 8px #00ff0030;
+    transition: background 0.15s, color 0.15s, transform 0.2s;
     letter-spacing: 0.03em;
 }
-
 .btn:hover, .btn:focus {
-    background-color: #00FF00;
-    color: #0f0f0f;
+    background-color: #00cc00;
+    color: #fff;
     outline: none;
+    transform: translateY(-2px) scale(1.04);
 }
-
 footer {
     text-align: center;
     margin-top: 60px;
     font-size: 1em;
     color: #77ff77;
     letter-spacing: 0.02em;
-    border-top: 2px solid #00FF00;
+    border-top: 1px solid #222;
     padding-top: 18px;
-    background: none;
+    background: linear-gradient(90deg, #181818 60%, #222 100%);
     border-radius: 0 0 10px 10px;
-    box-shadow: none;
+    box-shadow: 0 -2px 12px #00ff0020;
+    word-break: break-word;
+    transition: background 0.3s;
 }
 
-/* Mobile adaptivity */
-@media (max-width: 600px) {
-    body {
-        padding: 8px;
+@media (max-width: 575.98px) {
+    header h1 {
+        font-size: 1.1em;
+    }
+    .navbar-nav .nav-link {
+        font-size: 1em;
+        padding: 10px 8px !important;
     }
     main {
-        padding: 14px 4px;
-        border-radius: 6px;
-    }
-    header h1 {
-        font-size: 2em;
-    }
-    nav a {
-        display: block;
-        margin: 8px 0;
-        font-size: 1em;
-    }
-    h2 {
-        font-size: 1.15em;
-    }
-    ul {
-        margin-left: 16px;
-        font-size: 1em;
-    }
-    .btn {
-        width: 100%;
-        box-sizing: border-box;
-        font-size: 1em;
         padding: 10px 0;
     }
 }
