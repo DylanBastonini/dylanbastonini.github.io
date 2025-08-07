@@ -1,8 +1,7 @@
-/* Modern hacker-inspired theme with Bootstrap integration and binary animation support */
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
-
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     font-family: 'JetBrains Mono', 'Fira Mono', 'Cascadia Mono', 'Menlo', 'Consolas', 'Liberation Mono', monospace;
 }
 
@@ -10,96 +9,59 @@ body {
     background-color: #0f0f0f;
     color: #f0f0f0;
     line-height: 1.7;
+    padding: 24px;
     min-height: 100vh;
     letter-spacing: 0.01em;
-    padding: 0;
 }
 
 header {
     text-align: center;
     margin-bottom: 28px;
     letter-spacing: 0.04em;
-    position: relative;
-    overflow: hidden;
-    padding-top: 60px;
-    padding-bottom: 40px;
 }
 
 header h1 {
-    font-size: 2.2em;
+    font-size: 3em;
     color: #00FF00;
     font-weight: 900;
     text-shadow: 0 0 8px #00ff0080, 0 0 2px #00ff00;
     letter-spacing: 0.08em;
-    z-index: 2;
-    position: relative;
 }
 
 header p {
     font-style: normal;
     color: #b0ffb0;
-    font-size: 1.1em;
+    font-size: 1.2em;
     margin-top: 8px;
     letter-spacing: 0.03em;
-    z-index: 2;
-    position: relative;
-}
-
-#binary-animation {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    pointer-events: none;
-    opacity: 0.18;
 }
 
 nav {
+    text-align: center;
     margin-bottom: 36px;
     background: linear-gradient(90deg, #1a1a1a 60%, #222 100%);
-<<<<<<< HEAD
-    border-radius: 8px;
-    box-shadow: 0 2px 12px #00ff0020;
-    padding: 0;
-=======
     padding: 14px 0;
     border-radius: 8px;
     box-shadow: 0 2px 12px #00ff0020;
->>>>>>> parent of af49dde (Update style.css)
 }
 
-.navbar {
-    padding: 0 !important;
-}
-
-.navbar-nav .nav-link {
-    color: #00FF00 !important;
+nav a {
+    color: #00FF00;
+    margin: 0 18px;
+    text-decoration: none;
     font-weight: 700;
-    font-size: 1.08em;
-    letter-spacing: 0.02em;
-    transition: background 0.15s, color 0.15s;
+    font-size: 1.15em;
+    padding: 6px 10px;
     border-radius: 4px;
-    margin: 0 2px;
-    padding: 8px 14px !important;
+    transition: background 0.15s, color 0.15s;
+    letter-spacing: 0.02em;
 }
 
-.navbar-nav .nav-link:hover,
-.navbar-nav .nav-link:focus,
-.navbar-nav .nav-link.active {
-    color: #0f0f0f !important;
-    background: #00FF00 !important;
+nav a:hover, nav a:focus {
+    color: #0f0f0f;
+    background: #00FF00;
     text-shadow: 0 0 4px #00ff00;
     outline: none;
-}
-
-.navbar-toggler {
-    border: none;
-    background: none;
-    color: #00FF00 !important;
-    font-size: 1.7em;
-    margin-right: 10px;
 }
 
 main {
@@ -108,86 +70,43 @@ main {
     background: #181818;
     border-radius: 10px;
     box-shadow: 0 0 24px #00ff0020;
-<<<<<<< HEAD
-    padding: 32px 10px;
-=======
     padding: 32px 28px;
->>>>>>> parent of af49dde (Update style.css)
 }
 
-@media (max-width: 991.98px) {
-    color: #ff00ff;
-    main {
-        text-decoration: underline;
-        padding: 18px 2vw;
-    }
-    header {
-        padding-top: 40px;
-        padding-bottom: 24px;
-        display: inline-block;
-    }
-    margin-top: 14px;
-    header h1 {
-        padding: 12px 20px;
-        font-size: 1.5em;
-        f00;
-    }
-}
-ne;
-;
 section {
     margin-bottom: 44px;
-<<<<<<< HEAD
-}8px #00ff0030;
-und 0.15s, color 0.15s;
-=======
 }
 
->>>>>>> parent of af49dde (Update style.css)
 h2 {
-    .03em;
     color: #00FF00;
     margin-bottom: 12px;
     border-bottom: 2px solid #222;
-<<<<<<< HEAD
-    padding-bottom: 7px;00;
-    font-size: 1.3em;
-    color: #fff;
-=======
     padding-bottom: 7px;
     font-size: 1.5em;
->>>>>>> parent of af49dde (Update style.css)
     letter-spacing: 0.04em;
-    outline: none;
     text-shadow: 0 0 4px #00ff0040;
 }
 
 ul {
-    nter;
     list-style-type: square;
-    margin-top: 60px;
     margin-left: 28px;
-    font-size: 1em;
     color: #b0ffb0;
-    r: #77ff77;
     font-size: 1.08em;
-    2em;
     margin-bottom: 10px;
-    olid #222;
-}px;
-ear-gradient(90deg, #181818 60%, #222 100%);
+}
+
 a {
-    10px;
     color: #00ccff;
-    020;
     text-decoration: none;
     transition: color 0.15s;
 }
+
 a:hover, a:focus {
     color: #ff00ff;
     text-decoration: underline;
     outline: none;
 }
+
 .btn {
     display: inline-block;
     margin-top: 14px;
@@ -199,19 +118,16 @@ a:hover, a:focus {
     border-radius: 6px;
     font-size: 1.1em;
     box-shadow: 0 2px 8px #00ff0030;
-<<<<<<< HEAD
-    transition: background 0.15s, color 0.15s, transform 0.2s;
-=======
     transition: background 0.15s, color 0.15s;
->>>>>>> parent of af49dde (Update style.css)
     letter-spacing: 0.03em;
 }
+
 .btn:hover, .btn:focus {
     background-color: #00cc00;
     color: #fff;
     outline: none;
-    transform: translateY(-2px) scale(1.04);
 }
+
 footer {
     text-align: center;
     margin-top: 60px;
@@ -223,22 +139,4 @@ footer {
     background: linear-gradient(90deg, #181818 60%, #222 100%);
     border-radius: 0 0 10px 10px;
     box-shadow: 0 -2px 12px #00ff0020;
-<<<<<<< HEAD
-    word-break: break-word;
-    transition: background 0.3s;
-}
-
-@media (max-width: 575.98px) {
-    header h1 {
-        font-size: 1.1em;
-    }
-    .navbar-nav .nav-link {
-        font-size: 1em;
-        padding: 10px 8px !important;
-    }
-    main {
-        padding: 10px 0;
-    }
-=======
->>>>>>> parent of af49dde (Update style.css)
 }
