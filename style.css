@@ -24,8 +24,7 @@ header h1 {
     font-size: 3em;
     color: #00FF00;
     font-weight: 900;
-    text-shadow: 0 0 8px #00ff0080, 0 0 2px #00ff00;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.04em;
 }
 
 header p {
@@ -34,6 +33,7 @@ header p {
     font-size: 1.2em;
     margin-top: 8px;
     letter-spacing: 0.03em;
+    text-transform: uppercase;
 }
 
 nav {
@@ -58,8 +58,9 @@ nav a {
 
 nav a:hover, nav a:focus {
     color: #ffffff;
-    text-shadow: 0 0 2px #00ff00;
+    text-shadow: 0 0 20px #00ff00;
     outline: none;
+    text-decoration: none;
 }
 
 main {
@@ -67,7 +68,7 @@ main {
     margin: 0 auto;
     background: #181818;
     border-radius: 10px;
-    box-shadow: 0 0 24px #00ff0020;
+
     padding: 32px 28px;
 }
 
@@ -128,13 +129,14 @@ a:hover, a:focus {
 
 footer {
     text-align: center;
-    margin-top: 60px;
     font-size: 1em;
     color: #77ff77;
     letter-spacing: 0.02em;
-    border-top: 1px solid #222;
     padding-top: 18px;
-    background: linear-gradient(90deg, #181818 60%, #222 100%);
-    border-radius: 0 0 10px 10px;
-    box-shadow: 0 -2px 12px #00ff0020;
+    margin-top: 60px;
+    position: static;
+    width: 100%;
+}
+strong {
+    color:#00ff00
 }
