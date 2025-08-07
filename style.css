@@ -59,9 +59,15 @@ header p {
 nav {
     margin-bottom: 36px;
     background: linear-gradient(90deg, #1a1a1a 60%, #222 100%);
+<<<<<<< HEAD
     border-radius: 8px;
     box-shadow: 0 2px 12px #00ff0020;
     padding: 0;
+=======
+    padding: 14px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px #00ff0020;
+>>>>>>> parent of af49dde (Update style.css)
 }
 
 .navbar {
@@ -102,7 +108,11 @@ main {
     background: #181818;
     border-radius: 10px;
     box-shadow: 0 0 24px #00ff0020;
+<<<<<<< HEAD
     padding: 32px 10px;
+=======
+    padding: 32px 28px;
+>>>>>>> parent of af49dde (Update style.css)
 }
 
 @media (max-width: 991.98px) {
@@ -127,16 +137,26 @@ ne;
 ;
 section {
     margin-bottom: 44px;
+<<<<<<< HEAD
 }8px #00ff0030;
 und 0.15s, color 0.15s;
+=======
+}
+
+>>>>>>> parent of af49dde (Update style.css)
 h2 {
     .03em;
     color: #00FF00;
     margin-bottom: 12px;
     border-bottom: 2px solid #222;
+<<<<<<< HEAD
     padding-bottom: 7px;00;
     font-size: 1.3em;
     color: #fff;
+=======
+    padding-bottom: 7px;
+    font-size: 1.5em;
+>>>>>>> parent of af49dde (Update style.css)
     letter-spacing: 0.04em;
     outline: none;
     text-shadow: 0 0 4px #00ff0040;
@@ -179,7 +199,11 @@ a:hover, a:focus {
     border-radius: 6px;
     font-size: 1.1em;
     box-shadow: 0 2px 8px #00ff0030;
+<<<<<<< HEAD
     transition: background 0.15s, color 0.15s, transform 0.2s;
+=======
+    transition: background 0.15s, color 0.15s;
+>>>>>>> parent of af49dde (Update style.css)
     letter-spacing: 0.03em;
 }
 .btn:hover, .btn:focus {
@@ -199,6 +223,7 @@ footer {
     background: linear-gradient(90deg, #181818 60%, #222 100%);
     border-radius: 0 0 10px 10px;
     box-shadow: 0 -2px 12px #00ff0020;
+<<<<<<< HEAD
     word-break: break-word;
     transition: background 0.3s;
 }
@@ -214,4 +239,6 @@ footer {
     main {
         padding: 10px 0;
     }
+=======
+>>>>>>> parent of af49dde (Update style.css)
 }
