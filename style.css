@@ -40,8 +40,8 @@ nav {
     text-align: center;
     margin-bottom: 36px;
     padding: 14px 0;
-    border-radius: 8px;
-    box-shadow: 0px 0px 5px #0f0;
+    border-top: 4px solid #00ff00;
+    border-bottom: 4px solid #00ff00;
 }
 
 nav a {
@@ -89,13 +89,13 @@ h2 {
 ul {
     list-style-type: square;
     margin-left: 28px;
-    color: #b0ffb0;
+    color: #ffffff;
     font-size: 1.08em;
     margin-bottom: 10px;
 }
 
 a {
-    color: #00ccff;
+    color: #ff0000;
     text-decoration: none;
     transition: color 0.15s;
 }
