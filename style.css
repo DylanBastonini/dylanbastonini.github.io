@@ -39,10 +39,11 @@ header p {
 nav {
     text-align: center;
     margin-bottom: 36px;
-    background: linear-gradient(90deg, #1a1a1a 60%, #222 100%);
     padding: 14px 0;
     border-radius: 8px;
-    box-shadow: 0 2px 12px #00ff0020;
+    border: 2px solid #00FF00;
+    background: none;
+    box-shadow: none;
 }
 
 nav a {
@@ -67,20 +68,23 @@ nav a:hover, nav a:focus {
 main {
     max-width: 900px;
     margin: 0 auto;
-    background: #181818;
     border-radius: 10px;
-    box-shadow: 0 0 24px #00ff0020;
+    border: 2px solid #00FF00;
+    background: none;
+    box-shadow: none;
     padding: 32px 28px;
 }
 
 section {
     margin-bottom: 44px;
+    border: none;
+    background: none;
 }
 
 h2 {
     color: #00FF00;
     margin-bottom: 12px;
-    border-bottom: 2px solid #222;
+    border-bottom: 2px solid #00FF00;
     padding-bottom: 7px;
     font-size: 1.5em;
     letter-spacing: 0.04em;
@@ -111,20 +115,21 @@ a:hover, a:focus {
     display: inline-block;
     margin-top: 14px;
     padding: 12px 20px;
-    background-color: #00ff00;
-    color: #0f0f0f;
+    background: none;
+    color: #00FF00;
     text-decoration: none;
     font-weight: bold;
     border-radius: 6px;
     font-size: 1.1em;
-    box-shadow: 0 2px 8px #00ff0030;
+    border: 2px solid #00FF00;
+    box-shadow: none;
     transition: background 0.15s, color 0.15s;
     letter-spacing: 0.03em;
 }
 
 .btn:hover, .btn:focus {
-    background-color: #00cc00;
-    color: #fff;
+    background-color: #00FF00;
+    color: #0f0f0f;
     outline: none;
 }
 
@@ -134,9 +139,41 @@ footer {
     font-size: 1em;
     color: #77ff77;
     letter-spacing: 0.02em;
-    border-top: 1px solid #222;
+    border-top: 2px solid #00FF00;
     padding-top: 18px;
-    background: linear-gradient(90deg, #181818 60%, #222 100%);
+    background: none;
     border-radius: 0 0 10px 10px;
-    box-shadow: 0 -2px 12px #00ff0020;
+    box-shadow: none;
+}
+
+/* Mobile adaptivity */
+@media (max-width: 600px) {
+    body {
+        padding: 8px;
+    }
+    main {
+        padding: 14px 4px;
+        border-radius: 6px;
+    }
+    header h1 {
+        font-size: 2em;
+    }
+    nav a {
+        display: block;
+        margin: 8px 0;
+        font-size: 1em;
+    }
+    h2 {
+        font-size: 1.15em;
+    }
+    ul {
+        margin-left: 16px;
+        font-size: 1em;
+    }
+    .btn {
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 1em;
+        padding: 10px 0;
+    }
 }
